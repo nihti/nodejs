@@ -1,0 +1,20 @@
+// luo kanta
+CREATE DATABASE movie; 
+
+// listaa kannat
+\l 
+
+// yhdistä kantaan
+\c movie
+
+// kerro mihin yhdistetty
+\conninfo
+
+// luo taulu
+CREATE TABLE movies (id serial PRIMARY KEY, title VARCHAR (200) NOT NULL, director VARCHAR (200) NOT NULL, year INTEGER NOT NULL);
+
+// listaa taulut
+\d 
+
+// 
+SELECT * FROM movies
